@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"3d75f306-0c36-4c7f-96dd-372518a917c5",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>karateapi.bookDetails</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-10-03 05:34:39 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>testing the get ALL Book Details</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">karateapi/bookDetails.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Fetching Book Details</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name">testing the get ALL Book Details</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>300</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:3000/book&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">38</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">184</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">17:34:39.348 request:
+1 &gt; GET http://localhost:3000/book
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+17:34:39.375 response time in milliseconds: 25
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 5001
+1 &lt; ETag: W/&quot;1389-egQImH9z33lqxrcT7zWLssWrXT8&quot;
+1 &lt; Date: Thu, 03 Oct 2024 22:34:39 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;data&quot;:[{&quot;id&quot;:1,&quot;title&quot;:&quot;The Great Gatsby&quot;,&quot;author&quot;:&quot;F. Scott Fitzgerald&quot;,&quot;publisher&quot;:&quot;Scribner&quot;,&quot;published_date&quot;:&quot;1925-04-10T06:00:00.000Z&quot;,&quot;category&quot;:&quot;Fiction&quot;,&quot;price&quot;:&quot;10.99&quot;,&quot;isbn&quot;:&quot;9780743273565&quot;,&quot;quantity&quot;:50,&quot;language&quot;:&quot;EN&quot;},{&quot;id&quot;:2,&quot;title&quot;:&quot;To Kill a Mockingbird&quot;,&quot;author&quot;:&quot;Harper Lee&quot;,&quot;publisher&quot;:&quot;J.B. Lippincott &amp; Co.&quot;,&quot;published_date&quot;:&quot;1960-07-11T05:00:00.000Z&quot;,&quot;category&quot;:&quot;Fiction&quot;,&quot;price&quot;:&quot;7.99&quot;,&quot;isbn&quot;:&quot;9780061120084&quot;,&quot;quantity&quot;:35,&quot;language&quot;:&quot;EN&quot;},{&quot;id&quot;:3,&quot;title&quot;:&quot;1984&quot;,&quot;author&quot;:&quot;George Orwell&quot;,&quot;publisher&quot;:&quot;Secker &amp; Warburg&quot;,&quot;published_date&quot;:&quot;1949-06-08T05:00:00.000Z&quot;,&quot;category&quot;:&quot;Dystopian&quot;,&quot;price&quot;:&quot;6.99&quot;,&quot;isbn&quot;:&quot;9780451524935&quot;,&quot;quantity&quot;:40,&quot;language&quot;:&quot;EN&quot;},{&quot;id&quot;:4,&quot;title&quot;:&quot;Moby-Dick&quot;,&quot;author&quot;:&quot;Herman Melville&quot;,&quot;publisher&quot;:&quot;Harper &amp; Brothers&quot;,&quot;published_date&quot;:&quot;1851-10-18T05:50:36.000Z&quot;,&quot;category&quot;:&quot;Adventure&quot;,&quot;price&quot;:&quot;12.50&quot;,&quot;isbn&quot;:&quot;9781503280786&quot;,&quot;quantity&quot;:20,&quot;language&quot;:&quot;EN&quot;},{&quot;id&quot;:5,&quot;title&quot;:&quot;Pride and Prejudice&quot;,&quot;author&quot;:&quot;Jane Austen&quot;,&quot;publisher&quot;:&quot;T. Egerton&quot;,&quot;published_date&quot;:&quot;1813-01-28T05:50:36.000Z&quot;,&quot;category&quot;:&quot;Romance&quot;,&quot;price&quot;:&quot;5.99&quot;,&quot;isbn&quot;:&quot;9781503290563&quot;,&quot;quantity&quot;:25,&quot;language&quot;:&quot;EN&quot;},{&quot;id&quot;:6,&quot;title&quot;:&quot;War and Peace&quot;,&quot;author&quot;:&quot;Leo Tolstoy&quot;,&quot;publisher&quot;:&quot;The Russian Messenger&quot;,&quot;published_date&quot;:&quot;1869-01-01T05:50:36.000Z&quot;,&quot;category&quot;:&quot;Historical&quot;,&quot;price&quot;:&quot;14.99&quot;,&quot;isbn&quot;:&quot;9781400079988&quot;,&quot;quantity&quot;:15,&quot;language&quot;:&quot;RU&quot;},{&quot;id&quot;:7,&quot;title&quot;:&quot;The Catcher in the Rye&quot;,&quot;author&quot;:&quot;J.D. Salinger&quot;,&quot;publisher&quot;:&quot;Little, Brown and Company&quot;,&quot;published_date&quot;:&quot;1951-07-16T05:00:00.000Z&quot;,&quot;category&quot;:&quot;Fiction&quot;,&quot;price&quot;:&quot;8.99&quot;,&quot;isbn&quot;:&quot;9780316769488&quot;,&quot;quantity&quot;:30,&quot;language&quot;:&quot;EN&quot;},{&quot;id&quot;:8,&quot;title&quot;:&quot;The Odyssey&quot;,&quot;author&quot;:&quot;Homer&quot;,&quot;publisher&quot;:&quot;Penguin Classics&quot;,&quot;published_date&quot;:&quot;0800-01-01T05:50:36.000Z&quot;,&quot;category&quot;:&quot;Epic&quot;,&quot;price&quot;:&quot;13.99&quot;,&quot;isbn&quot;:&quot;9780140268867&quot;,&quot;quantity&quot;:10,&quot;language&quot;:&quot;GR&quot;},{&quot;id&quot;:9,&quot;title&quot;:&quot;Ulysses&quot;,&quot;author&quot;:&quot;James Joyce&quot;,&quot;publisher&quot;:&quot;Sylvia Beach&quot;,&quot;published_date&quot;:&quot;1922-02-02T06:00:00.000Z&quot;,&quot;category&quot;:&quot;Modernist&quot;,&quot;price&quot;:&quot;18.99&quot;,&quot;isbn&quot;:&quot;9780199535675&quot;,&quot;quantity&quot;:12,&quot;language&quot;:&quot;EN&quot;},{&quot;id&quot;:10,&quot;title&quot;:&quot;Crime and Punishment&quot;,&quot;author&quot;:&quot;Fyodor Dostoevsky&quot;,&quot;publisher&quot;:&quot;The Russian Messenger&quot;,&quot;published_date&quot;:&quot;1866-01-01T05:50:36.000Z&quot;,&quot;category&quot;:&quot;Psychological&quot;,&quot;price&quot;:&quot;11.50&quot;,&quot;isbn&quot;:&quot;9780486415871&quot;,&quot;quantity&quot;:18,&quot;language&quot;:&quot;RU&quot;},{&quot;id&quot;:11,&quot;title&quot;:&quot;The Hobbit&quot;,&quot;author&quot;:&quot;J.R.R. Tolkien&quot;,&quot;publisher&quot;:&quot;George Allen &amp; Unwin&quot;,&quot;published_date&quot;:&quot;1937-09-21T05:00:00.000Z&quot;,&quot;category&quot;:&quot;Fantasy&quot;,&quot;price&quot;:&quot;9.99&quot;,&quot;isbn&quot;:&quot;9780547928227&quot;,&quot;quantity&quot;:40,&quot;language&quot;:&quot;EN&quot;},{&quot;id&quot;:12,&quot;title&quot;:&quot;The Lord of the Rings&quot;,&quot;author&quot;:&quot;J.R.R. Tolkien&quot;,&quot;publisher&quot;:&quot;George Allen &amp; Unwin&quot;,&quot;published_date&quot;:&quot;1954-07-29T05:00:00.000Z&quot;,&quot;category&quot;:&quot;Fantasy&quot;,&quot;price&quot;:&quot;29.99&quot;,&quot;isbn&quot;:&quot;9780544003415&quot;,&quot;quantity&quot;:50,&quot;language&quot;:&quot;EN&quot;},{&quot;id&quot;:13,&quot;title&quot;:&quot;Don Quixote&quot;,&quot;author&quot;:&quot;Miguel de Cervantes&quot;,&quot;publisher&quot;:&quot;Francisco de Robles&quot;,&quot;published_date&quot;:&quot;1605-01-16T05:50:36.000Z&quot;,&quot;category&quot;:&quot;Adventure&quot;,&quot;price&quot;:&quot;14.75&quot;,&quot;isbn&quot;:&quot;9780060934347&quot;,&quot;quantity&quot;:15,&quot;language&quot;:&quot;ES&quot;},{&quot;id&quot;:14,&quot;title&quot;:&quot;The Divine Comedy&quot;,&quot;author&quot;:&quot;Dante Alighieri&quot;,&quot;publisher&quot;:&quot;Penguin Classics&quot;,&quot;published_date&quot;:&quot;1320-01-01T05:50:36.000Z&quot;,&quot;category&quot;:&quot;Epic&quot;,&quot;price&quot;:&quot;17.99&quot;,&quot;isbn&quot;:&quot;9780140448955&quot;,&quot;quantity&quot;:20,&quot;language&quot;:&quot;IT&quot;},{&quot;id&quot;:15,&quot;title&quot;:&quot;Brave New World&quot;,&quot;author&quot;:&quot;Aldous Huxley&quot;,&quot;publisher&quot;:&quot;Chatto &amp; Windus&quot;,&quot;published_date&quot;:&quot;1932-08-01T05:00:00.000Z&quot;,&quot;category&quot;:&quot;Dystopian&quot;,&quot;price&quot;:&quot;9.50&quot;,&quot;isbn&quot;:&quot;9780060850524&quot;,&quot;quantity&quot;:35,&quot;language&quot;:&quot;EN&quot;},{&quot;id&quot;:16,&quot;title&quot;:&quot;Frankenstein&quot;,&quot;author&quot;:&quot;Mary Shelley&quot;,&quot;publisher&quot;:&quot;Lackington, Hughes, Harding, Mavor &amp; Jones&quot;,&quot;published_date&quot;:&quot;1818-01-01T05:50:36.000Z&quot;,&quot;category&quot;:&quot;Gothic&quot;,&quot;price&quot;:&quot;7.50&quot;,&quot;isbn&quot;:&quot;9780486282114&quot;,&quot;quantity&quot;:40,&quot;language&quot;:&quot;EN&quot;},{&quot;id&quot;:17,&quot;title&quot;:&quot;Dracula&quot;,&quot;author&quot;:&quot;Bram Stoker&quot;,&quot;publisher&quot;:&quot;Archibald Constable and Company&quot;,&quot;published_date&quot;:&quot;1897-05-26T06:00:00.000Z&quot;,&quot;category&quot;:&quot;Horror&quot;,&quot;price&quot;:&quot;8.25&quot;,&quot;isbn&quot;:&quot;9780486411095&quot;,&quot;quantity&quot;:25,&quot;language&quot;:&quot;EN&quot;},{&quot;id&quot;:18,&quot;title&quot;:&quot;The Brothers Karamazov&quot;,&quot;author&quot;:&quot;Fyodor Dostoevsky&quot;,&quot;publisher&quot;:&quot;The Russian Messenger&quot;,&quot;published_date&quot;:&quot;1880-01-01T05:50:36.000Z&quot;,&quot;category&quot;:&quot;Philosophical&quot;,&quot;price&quot;:&quot;13.50&quot;,&quot;isbn&quot;:&quot;9780374528379&quot;,&quot;quantity&quot;:18,&quot;language&quot;:&quot;RU&quot;},{&quot;id&quot;:19,&quot;title&quot;:&quot;Anna Karenina&quot;,&quot;author&quot;:&quot;Leo Tolstoy&quot;,&quot;publisher&quot;:&quot;The Russian Messenger&quot;,&quot;published_date&quot;:&quot;1878-01-01T05:50:36.000Z&quot;,&quot;category&quot;:&quot;Romance&quot;,&quot;price&quot;:&quot;12.75&quot;,&quot;isbn&quot;:&quot;9780140449174&quot;,&quot;quantity&quot;:12,&quot;language&quot;:&quot;RU&quot;},{&quot;id&quot;:20,&quot;title&quot;:&quot;The Iliad&quot;,&quot;author&quot;:&quot;Homer&quot;,&quot;publisher&quot;:&quot;Penguin Classics&quot;,&quot;published_date&quot;:&quot;0762-01-01T05:50:36.000Z&quot;,&quot;category&quot;:&quot;Epic&quot;,&quot;price&quot;:&quot;10.99&quot;,&quot;isbn&quot;:&quot;9780140275360&quot;,&quot;quantity&quot;:25,&quot;language&quot;:&quot;GR&quot;},{&quot;id&quot;:21,&quot;title&quot;:&quot;The Future&quot;,&quot;author&quot;:&quot;F. Tom Fitzgerald&quot;,&quot;publisher&quot;:&quot;Scribner&quot;,&quot;published_date&quot;:&quot;1992-04-10T05:00:00.000Z&quot;,&quot;category&quot;:&quot;Novel&quot;,&quot;price&quot;:&quot;19.99&quot;,&quot;isbn&quot;:&quot;9780743273444&quot;,&quot;quantity&quot;:20,&quot;language&quot;:&quot;EN&quot;},{&quot;id&quot;:22,&quot;title&quot;:&quot;The Past&quot;,&quot;author&quot;:&quot;JPN&quot;,&quot;publisher&quot;:&quot;KSTNs&quot;,&quot;published_date&quot;:&quot;1997-04-10T05:00:00.000Z&quot;,&quot;category&quot;:&quot;Fiction&quot;,&quot;price&quot;:&quot;21.99&quot;,&quot;isbn&quot;:&quot;9780743273354&quot;,&quot;quantity&quot;:11,&quot;language&quot;:&quot;EN&quot;}],&quot;meta&quot;:{&quot;page&quot;:1}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.data[0].id == 1</span>
+      </div>
+    </div>
+    <div class="time-cell passed">28</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.data[0].title == &quot;The Great Gatsby&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#Reading the file ExpectedOutput.json and storing same response in variable expectedResult</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>expectedResult=read(&#39;./books.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">42</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#Asserting the Actual Response with the Expected Response</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == expectedResult</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
